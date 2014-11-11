@@ -14,7 +14,7 @@ namespace Quiron.LojaVirtual.Web.Controllers
         public ActionResult Index()
         {
             repositorio = new ProdutosRepositorio();
-            var produtos = repositorio.Produtos.Take(3);
+            var produtos = repositorio.Produtos;
             
             return View(produtos);
         }
